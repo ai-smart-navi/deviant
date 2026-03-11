@@ -1,15 +1,15 @@
-:root {
+﻿:root {
     --bg: #070707;
     --bg-soft: #101010;
     --panel: rgba(255, 255, 255, 0.045);
     --panel-strong: rgba(255, 255, 255, 0.075);
-    --line: rgba(255, 215, 0, 0.22);
+    --line: rgba(168, 85, 247, 0.24);
     --line-soft: rgba(255, 255, 255, 0.08);
     --text: #ffffff;
     --muted: rgba(255, 255, 255, 0.7);
     --subtle: rgba(255, 255, 255, 0.42);
-    --gold: #ffd700;
-    --gold-deep: #d39d08;
+    --accent: #a855f7;
+    --accent-deep: #7e22ce;
     --shadow-xl: 0 40px 100px rgba(0, 0, 0, 0.45);
     --shadow-lg: 0 26px 70px rgba(0, 0, 0, 0.34);
     --shadow-md: 0 18px 40px rgba(0, 0, 0, 0.28);
@@ -34,8 +34,8 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
     color: var(--text);
     background:
-        radial-gradient(circle at top left, rgba(255, 215, 0, 0.12), transparent 28%),
-        radial-gradient(circle at 85% 15%, rgba(255, 215, 0, 0.08), transparent 24%),
+        radial-gradient(circle at top left, rgba(168, 85, 247, 0.14), transparent 28%),
+        radial-gradient(circle at 85% 15%, rgba(168, 85, 247, 0.10), transparent 24%),
         linear-gradient(180deg, #090909 0%, #060606 100%);
     line-height: 1.65;
 }
@@ -62,7 +62,7 @@ body::after {
     width: 360px;
     height: 360px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(255, 215, 0, 0.12), rgba(255, 215, 0, 0));
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.14), rgba(168, 85, 247, 0));
     filter: blur(16px);
     pointer-events: none;
     opacity: 0.7;
@@ -114,12 +114,12 @@ img {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: radial-gradient(circle at 35% 35%, #fff4b5, var(--gold));
-    box-shadow: 0 0 18px rgba(255, 215, 0, 0.45);
+    background: radial-gradient(circle at 35% 35%, #f3e8ff, var(--accent));
+    box-shadow: 0 0 18px rgba(168, 85, 247, 0.45);
 }
 
 .brand span {
-    color: var(--gold);
+    color: var(--accent);
 }
 
 .header-nav {
@@ -191,7 +191,7 @@ img {
     width: 260px;
     aspect-ratio: 1;
     border-radius: 50%;
-    background: radial-gradient(circle at 35% 35%, rgba(255, 215, 0, 0.34), rgba(255, 215, 0, 0));
+    background: radial-gradient(circle at 35% 35%, rgba(168, 85, 247, 0.34), rgba(168, 85, 247, 0));
     filter: blur(10px);
     opacity: 0.7;
     pointer-events: none;
@@ -229,7 +229,7 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    color: var(--gold);
+    color: var(--accent);
     font-size: 12px;
     font-weight: 900;
     letter-spacing: 0.22em;
@@ -240,7 +240,7 @@ img {
     content: "";
     width: 28px;
     height: 1px;
-    background: linear-gradient(90deg, rgba(255, 215, 0, 0.98), transparent);
+    background: linear-gradient(90deg, rgba(168, 85, 247, 0.98), transparent);
 }
 
 .hero-copy h1,
@@ -257,7 +257,7 @@ img {
 }
 
 .accent {
-    color: var(--gold);
+    color: var(--accent);
 }
 
 .lead,
@@ -303,9 +303,9 @@ img {
 }
 
 .button-primary {
-    color: #050505;
-    background: linear-gradient(135deg, var(--gold), #ffbf1f);
-    box-shadow: 0 16px 36px rgba(255, 215, 0, 0.18);
+    color: var(--text);
+    background: linear-gradient(135deg, var(--accent), var(--accent-deep));
+    box-shadow: 0 16px 36px rgba(126, 34, 206, 0.28);
 }
 
 .button-secondary {
@@ -334,7 +334,7 @@ img {
     gap: 8px;
     padding: 8px 12px;
     border-radius: 999px;
-    border: 1px solid rgba(255, 215, 0, 0.18);
+    border: 1px solid rgba(168, 85, 247, 0.20);
     background: rgba(255, 255, 255, 0.03);
     color: rgba(255, 255, 255, 0.82);
     font-size: 12px;
@@ -346,7 +346,7 @@ img {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--gold);
+    background: var(--accent);
 }
 
 .panel,
@@ -374,7 +374,7 @@ img {
     right: 0;
     height: 3px;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-    background: linear-gradient(90deg, rgba(255, 215, 0, 0.9), rgba(255, 215, 0, 0));
+    background: linear-gradient(90deg, rgba(168, 85, 247, 0.90), rgba(168, 85, 247, 0));
 }
 
 .panel::after,
@@ -386,7 +386,7 @@ img {
     inset: auto 14px -16px 14px;
     height: 26px;
     border-radius: 999px;
-    background: radial-gradient(circle, rgba(255, 215, 0, 0.08), transparent 70%);
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.12), transparent 70%);
     filter: blur(8px);
     opacity: 0.7;
     pointer-events: none;
@@ -397,7 +397,7 @@ img {
 .metric-card:hover,
 .info-card:hover {
     transform: translateY(-4px);
-    border-color: rgba(255, 215, 0, 0.18);
+    border-color: rgba(168, 85, 247, 0.20);
     box-shadow: var(--shadow-xl), inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
@@ -421,8 +421,8 @@ img {
     width: 38px;
     height: 38px;
     border-radius: 12px;
-    background: linear-gradient(135deg, var(--gold), #ffb400);
-    color: #060606;
+    background: linear-gradient(135deg, var(--accent), var(--accent-deep));
+    color: var(--text);
     font-size: 14px;
     font-weight: 900;
     margin-bottom: 16px;
@@ -506,10 +506,14 @@ p {
 
 .list li::before,
 .check-list li::before {
-    content: "•";
+    content: "";
     position: absolute;
     left: 0;
-    color: var(--gold);
+    top: 0.62em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
 }
 
 .hero-side,
@@ -531,7 +535,7 @@ p {
 .metric-card strong,
 .info-card strong {
     display: block;
-    color: var(--gold);
+    color: var(--accent);
     font-size: 12px;
     font-weight: 900;
     letter-spacing: 0.18em;
@@ -562,13 +566,13 @@ p {
 }
 
 .inline-link {
-    color: var(--gold);
+    color: var(--accent);
 }
 
 .quote-shell {
     padding: 34px;
-    background: linear-gradient(160deg, rgba(255, 215, 0, 0.11), rgba(255, 255, 255, 0.03));
-    border-color: rgba(255, 215, 0, 0.22);
+    background: linear-gradient(160deg, rgba(168, 85, 247, 0.14), rgba(255, 255, 255, 0.03));
+    border-color: rgba(168, 85, 247, 0.24);
 }
 
 .quote-copy h2 {
@@ -585,8 +589,8 @@ p {
 }
 
 .back-link::before {
-    content: "←";
-    color: var(--gold);
+    content: "<";
+    color: var(--accent);
 }
 
 .kicker {
@@ -600,7 +604,7 @@ p {
     font-size: 40px;
     line-height: 1;
     font-weight: 900;
-    color: var(--gold);
+    color: var(--accent);
     margin: 12px 0;
 }
 
@@ -781,3 +785,4 @@ p {
         scroll-behavior: auto !important;
     }
 }
+
